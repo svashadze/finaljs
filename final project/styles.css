@@ -1,0 +1,232 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:rgb(120, 75, 15) ;
+  }
+  
+  .topnav {
+    overflow: hidden;
+    background-color:rgb(120, 75, 15);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .topnav img{
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+  }
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bolder;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+    border-radius: 70%;
+  }
+  
+  .topnav a.active {
+    background-color:white;
+    color: black;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav.responsive 
+    {position: relative;
+      text-align: center;
+      flex-direction: column;
+      height: 100%;
+      background-color:rgb(150, 87, 6);
+      opacity: 0.6;
+  
+    }
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      
+    }
+  }
+  .slideshow-container {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    margin: auto;
+  }
+  .mySlides img {
+      width: 100%;
+      height:600px;
+  
+    }
+  
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active {
+    background-color: #717171;
+  }
+  
+
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  
+  @media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+  }
+  .error-text {
+    color: red;
+    font-size: 16px;
+}
+
+.three{
+    width: 100%;
+    height: 300px;
+    margin-top:350px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+.val{
+   height: 300px;
+   margin-top: 5px;
+}
+.accordion {
+    background-color:rgb(120, 75, 15);
+    color:white;
+    cursor: pointer;
+    padding: 18px;
+    width: 50%;
+    border:#ddd;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+   h2{
+      color: white;
+      margin-left: 20px;
+      margin-bottom: 20px;
+      font-weight: bolder;
+  }
+  .accordion p{
+    color: white;
+
+    font-weight: bolder;
+}
+  
+  .active, .accordion:hover {
+    background-color:rgb(120, 75, 15);  
+  }
+  
+  .panel {
+    padding: 0 18px;
+    display: none;
+    background-color:rgb(120, 75, 15);
+    overflow: hidden;
+    width: 50%;
+    height: 50px;
+    color:white;
+  }
+  #form h1 {
+    color: white;
+    text-align: start;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+#form button {
+    padding: 10px;
+    margin-top: 10px;
+    width: 65%;
+    color: white;
+    background-color:rgb(152, 118, 74);
+    border: none;
+    border-radius: 4px;
+    font-weight: bolder;
+}
+
+.input-control {
+    display: flex;
+    flex-direction: column;
+}
+.input-control label{
+    color: white;
+}
+.input-control input {
+    border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	font-size: 12px;
+	padding: 8px;
+	width: 100%;
+    margin-top: 5px;
+    
+}
+
+.input-control input:focus {
+    outline: 0;
+}
+
+.input-control.success input {
+    border-color: green;
+}
+
+.input-control.error input {
+    border-color:black;
+}
+
+.input-control .error {
+    color:black;
+    font-size: 10px;
+    height: 13px;
+}
+
